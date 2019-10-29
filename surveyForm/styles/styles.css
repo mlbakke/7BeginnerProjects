@@ -1,0 +1,13 @@
+
+label {
+    box-sizing: border-box;
+}
+input, select {
+    box-sizing: border-box;
+    margin: 7px 5px 10px;
+    padding: 2px;
+}
+textarea {
+    width: 20rem;
+    height: 5rem;
+}
