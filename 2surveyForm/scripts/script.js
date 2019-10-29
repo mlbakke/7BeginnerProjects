@@ -8,11 +8,13 @@ function scrollFunction() {
     document.getElementById("heading").style.fontSize = "1.5rem";
     document.getElementById("header").style.height = "3rem";
     /* just slightly reduce container height to avoid annoying jumps in 
-        the position of the survey form*/
+      the position of the survey form*/
     document.getElementById("headContainer").style.height = "9rem"; 
+    document.getElementById("subHeading").style.display = "none"
   } else {
     document.getElementById("heading").style.fontSize = "3rem";
     document.getElementById("header").style.height = "10rem";
     document.getElementById("headContainer").style.height = "10rem";
+    document.getElementById("subHeading").style.display = "block"
   }
 }

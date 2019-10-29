@@ -25,11 +25,24 @@ header {
     box-sizing: border-box;
     transition: 0.5s;     /*transition time when reducing size on scrolling*/
 }
-header h1 {
-    font-size: 3rem;
+h1, h2 {
     color: rgba(194, 182, 206, .5);
     font-family: 'Roboto', 'Montserrat', sans-serif;
     transition: 0.5s;     /*transition time when reducing size on scrolling*/
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    margin-top: -1.5rem;
+    margin-left: -10%;
+    font-size: 1rem;
+}
+@media only screen and (min-width: 350px) {
+    h1 { font-size: 3rem; }
+}
+@media only screen and (min-width: 690px) {
+    h2 { font-size: 1.5rem; }
 }
 /*SURVEY FORM*/
 .surveyForm {
