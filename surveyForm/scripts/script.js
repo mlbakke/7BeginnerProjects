@@ -7,9 +7,9 @@ function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("heading").style.fontSize = "1.5rem";
     document.getElementById("header").style.height = "3rem";
-    /*slightly larger container height to avoid annoying jumps in 
+    /* just slightly reduce container height to avoid annoying jumps in 
         the position of the survey form*/
-    document.getElementById("headContainer").style.height = "5rem"; 
+    document.getElementById("headContainer").style.height = "9rem"; 
   } else {
     document.getElementById("heading").style.fontSize = "3rem";
     document.getElementById("header").style.height = "10rem";
