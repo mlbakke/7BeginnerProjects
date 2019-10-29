@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="surveyForm">
+    <div id="headContainer">    <!--to avoid starting overlap of header/surveyform-->
+        <header id="header">
+            <h1 id="heading">Survey Form</h1>
+        </header>
+    </div>
+    <div class="surveyForm">    <!--wrap form in div to center the form-->
         <form action="surveyForm" id="surveyForm">
             <fieldset>
                 <legend>Personal information</legend>
@@ -67,5 +72,12 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+    <footer>
+        Made by Martin Liland Bakke <br>
+        Background photo by <a href="https://www.instagram.com/felix_mittermeier/">
+        Felix Mittermeier</a> from <a href="https://www.pexels.com/photo/silhouette-of-person-under-blue-and-purple-sky-957040/">
+        Pexels</a>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
