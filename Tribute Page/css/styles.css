@@ -1,0 +1,85 @@
+html {
+    font-size: 18px;
+}
+body {
+    background: #EEEEEE;
+}
+main {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+/*HEADINGS AND HEADERS*/
+header {
+    text-align: center;
+}
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-variant: small-caps;
+}
+h2 {
+    margin: 30px 0 20px;
+}
+/*FIGURE SECTION*/
+figure {
+    background-color: #FFFFFF;
+    /*So we don't mess up with the percentages, we bake it border box*/
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    right: 30%;
+    width: 160%;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1),
+                2px 3px 3px rgba(0, 0, 0, 0.1),
+                3px 5px 3px rgba(0, 0, 0, 0.1);
+}
+#king {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: both;
+}
+/*TIMELINE*/
+ul {
+    font-size: 1.1rem;
+}
+em {
+    font-weight: 700;
+}
+/*REST OF PAGE*/
+#quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.right {
+    float: right;
+}
+
+#readMore {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Media queries*/
+@media only screen and (min-width: 1000px)  {
+    figure {
+        width: 140%;
+        right: 20%;
+    }
+}
+@media only screen and (min-width: 1250px)  {
+    figure {
+        width: 120%;
+        right: 10%;
+    }
+}
+@media only screen and (min-width: 1500px)  {
+    figure {
+        width: 100%;
+        right: 5%;
+    }
+}
