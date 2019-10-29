@@ -1,4 +1,14 @@
-
+.surveyForm {
+    text-align: center;
+}
+form {
+    display:inline-block;
+    margin: auto;
+    border: 1px solid black;
+    text-align: left;
+    width: 50%;
+    min-width: 22rem;
+}
 label {
     box-sizing: border-box;
 }
@@ -8,6 +18,10 @@ input, select {
     padding: 2px;
 }
 textarea {
-    width: 20rem;
-    height: 5rem;
+    width: 23em;
+    height: 5em;
+}
+
+input[type=submit] {
+    float:right;
 }
