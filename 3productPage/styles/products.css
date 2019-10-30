@@ -1,0 +1,91 @@
+/* Variables */
+:root{
+    --main-bg-color: rgb(240, 240, 240);
+    --dark-bg-color: rgb(200, 200, 200);
+    --button-color: rgb(255, 196, 0);
+    --icon-color: rgb(240, 128, 0);
+}
+/* Site-wide */
+body {
+    background-color: var(--main-bg-color);
+    font-size: 1.2rem;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;       /*take up whole space and small screens*/
+    max-width: 900px;   /*max 900px*/
+}
+li {
+    list-style: none; /*remove dots*/
+}
+h1, h2, h3 {
+    font-weight: 700;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+/* Header*/
+/* Get Started section */
+/* Features */
+.faLogo{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--icon-color);
+    width: 10%;
+}
+.featureText{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.featurePiece h2 {
+    box-sizing: border-box;
+    display: block;
+}
+.featurePiece p {
+    display: block;
+}
+/*.featurePiece h2 {
+    display: inline;
+    line-height: 2rem;
+    margin-left: 1%;
+}
+.featurePiece p {
+    margin-left: 12%;
+} */
+/* Video */
+/* Footer */
+/* Offers*/
+.offers {
+    display: grid;      /*3 columns */
+    grid-column-gap: 1%;
+    margin-top: 2%;
+}
+#tenor { grid-column-start: 1; grid-column-end: 2; }
+#bass { grid-column-start: 2; grid-column-end: 3; }
+#valve { grid-column-start: 3; grid-column-end: 4; }
+    /*adjusts heading for each element(/trombone)*/
+.offerHead {
+    background-color: var(--dark-bg-color);
+    padding: 5px;
+}
+.offerHead h2 {
+    font-size: 1.75rem;
+    margin: .75rem;
+}
+.offerElement {
+    width: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+.price {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+/* Buttons*/
+button, #submit {
+    background-color: var(--button-color);
+    border: none;
+    font-size: 1.2rem;
+}
