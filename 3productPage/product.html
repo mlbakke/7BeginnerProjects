@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product landing page</title>
+    <link rel="stylesheet" href="styles/products.css">
+    <script src="https://kit.fontawesome.com/d769e5e148.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" 
+            alt="Original Trombones logo">
+        </div>
         <nav>
             <ul class="nav topNav">
                 <li><a href="#features">Features</a></li>
@@ -18,16 +23,77 @@
         </nav>
     </header>
     <div class="container">
-        <section class="start"></section>
+        <section class="start">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <form action="" id="form">
+                <input type="email" name="email" id="email" 
+                placeholder="youremail@host.com" required> <br>
+                <input type="submit" id="submit" value="Get Started">
+            </form>
+        </section>
         <section class="features" id="features">
-            <div class="featurePiece" id="materials"></div>
-            <div class="featurePiece" id="shipping"></div>
-            <div class="featurePiece" id="assurance"></div>
+            <div class="featurePiece" id="materials">
+                <i class="fa fa-3x fa-fire"></i>
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced 
+                    locally. This will increase the longevity of your purchase.
+                </p>
+            </div>
+            <div class="featurePiece" id="shipping">
+                <i class="fa fa-3x fa-truck"></i>
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we 
+                    have finished making it. We also provide free returns 
+                    if you are not satisfied.
+                </p>
+            </div>
+            <div class="featurePiece" id="assurance">
+                <i class="fa fa-3x fa-battery-full"></i>
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are 
+                    no damages or faults and we will check and test the 
+                    pitch of your instrument.
+                </p>
+            </div>
+        </section>
+        <section class="video">
+                <iframe width="450" height="300" 
+                    src="https://www.youtube.com/embed/y8Yv4pnO7qc" 
+                    frameborder="0" allow="accelerometer; autoplay; 
+                    encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
         </section>
         <section class="offers" id="offers">
-            <div class="offerElement" id="tenor"></div>
-            <div class="offerElement" id="bass"></div>
-            <div class="offerElement" id="valve"></div>
+            <div class="offerElement" id="tenor">
+                <h2 class="offerHead">Tenor Trombone</h2>
+                <p class="price">$600</p>
+                <ul class="offerFeatures">
+                    <li>Cool</li>
+                    <li>Big</li>
+                    <li>Light</li>
+                    <li>Good</li>
+                </ul>
+            </div>
+            <div class="offerElement" id="bass">
+                <h2 class="offerHead">Bass Trombone</h2>
+                <p class="price">$900</p>
+                <ul class="offerFeatures">
+                    <li>Cooler</li>
+                    <li>Bigger</li>
+                    <li>Lighter</li>
+                    <li>Greater</li>
+                </ul>
+            </div>
+            <div class="offerElement" id="valve">
+                <h2 class="offerHead">Valve Trombone</h2>
+                <p class="price">$1200</p>
+                <ul class="offerFeatures">
+                    <li>Coolest</li>
+                    <li>Biggest</li>
+                    <li>Lightest</li>
+                    <li>Greatest</li>
+                </ul>
+            </div>
         </section>
     </div>
     <footer>
