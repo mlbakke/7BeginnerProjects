@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product landing page</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/products.css">
     <script src="https://kit.fontawesome.com/d769e5e148.js" crossorigin="anonymous"></script>
 </head>
@@ -33,14 +34,20 @@
         </section>
         <section class="features" id="features">
             <div class="featurePiece" id="materials">
-                <i class="fa fa-3x fa-fire"></i>
-                <h2>Premium Materials</h2>
-                <p>Our trombones use the shiniest brass which is sourced 
-                    locally. This will increase the longevity of your purchase.
-                </p>
+                <div class="faLogo">
+                    <i class="fa fa-3x fa-fire"></i> 
+                </div>
+                <div class="featureText">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced 
+                        locally. This will increase the longevity of your purchase.
+                    </p>
+                </div>
             </div>
             <div class="featurePiece" id="shipping">
-                <i class="fa fa-3x fa-truck"></i>
+                <div class="faLogo">
+                    <i class="fa fa-3x fa-truck"></i>
+                </div>
                 <h2>Fast Shipping</h2>
                 <p>We make sure you recieve your trombone as soon as we 
                     have finished making it. We also provide free returns 
@@ -48,7 +55,9 @@
                 </p>
             </div>
             <div class="featurePiece" id="assurance">
-                <i class="fa fa-3x fa-battery-full"></i>
+                <div class="faLogo">
+                    <i class="fa fa-3x fa-battery-full"></i>
+                </div>
                 <h2>Quality Assurance</h2>
                 <p>For every purchase you make, we will ensure there are 
                     no damages or faults and we will check and test the 
@@ -65,7 +74,9 @@
         </section>
         <section class="offers" id="offers">
             <div class="offerElement" id="tenor">
-                <h2 class="offerHead">Tenor Trombone</h2>
+                <div class="offerHead">
+                    <h2>Tenor Trombone</h2>
+                </div>
                 <p class="price">$600</p>
                 <ul class="offerFeatures">
                     <li>Cool</li>
@@ -73,9 +84,12 @@
                     <li>Light</li>
                     <li>Good</li>
                 </ul>
+                <button>Select</button>
             </div>
             <div class="offerElement" id="bass">
-                <h2 class="offerHead">Bass Trombone</h2>
+                <div class="offerHead">
+                    <h2>Bass Trombone</h2>
+                </div>
                 <p class="price">$900</p>
                 <ul class="offerFeatures">
                     <li>Cooler</li>
@@ -83,9 +97,12 @@
                     <li>Lighter</li>
                     <li>Greater</li>
                 </ul>
+                <button>Select</button>
             </div>
             <div class="offerElement" id="valve">
-                <h2 class="offerHead">Valve Trombone</h2>
+                <div class="offerHead">
+                    <h2>Valve Trombone</h2>
+                </div>
                 <p class="price">$1200</p>
                 <ul class="offerFeatures">
                     <li>Coolest</li>
@@ -93,6 +110,7 @@
                     <li>Lightest</li>
                     <li>Greatest</li>
                 </ul>
+                <button>Select</button>
             </div>
         </section>
     </div>
