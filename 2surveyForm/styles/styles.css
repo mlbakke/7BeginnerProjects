@@ -73,7 +73,9 @@ textarea {
 }
 
 input[type=submit] {
-    float:right;
+    margin-left: 1em;
+    opacity: .75;
+    border-radius: .1em;
 }
 
 /*FOOTER*/
