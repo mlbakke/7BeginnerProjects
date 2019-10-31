@@ -15,28 +15,36 @@ body {
     width: 100%;       /*take up whole space and small screens*/
     max-width: 900px;   /*max 900px*/
 }
-li {
-    list-style: none; /*remove dots*/
-}
-h1, h2, h3 {
-    font-weight: 700;
-}
-h1 { font-size: 2rem; }
+
+li { list-style: none; } /*remove dots*/
+h1, h2, h3 { font-weight: 700; }
+h1 { font-size: 2rem; margin-bottom: 10px;}
 h2 { font-size: 1.5rem; }
 /* Header*/
 /* Get Started section */
+.start {
+    text-align: center;
+}
+input {
+    margin: 10px 0;
+}
+input[type="email"] {
+    height: 1.2rem;
+}
 /* Features */
 .faLogo{
     display: inline-block;
     margin-top: 1rem;
     color: var(--icon-color);
     width: 10%;
+    margin: 0 5px 20px 5px;
 }
 .featureText{
     display: inline-block;
     flex-direction: column;
     justify-content: center;
     width: 70%;
+    margin: 0 5px 10px 20px;
 }
 .featurePiece h2 {
     box-sizing: border-box;
@@ -45,15 +53,10 @@ h2 { font-size: 1.5rem; }
 .featurePiece p {
     display: block;
 }
-/*.featurePiece h2 {
-    display: inline;
-    line-height: 2rem;
-    margin-left: 1%;
-}
-.featurePiece p {
-    margin-left: 12%;
-} */
 /* Video */
+.video {
+    text-align: center; /*center video*/
+}
 /* Footer */
 /* Offers*/
 .offers {
@@ -88,4 +91,7 @@ button, #submit {
     background-color: var(--button-color);
     border: none;
     font-size: 1.2rem;
+    width: 125px;
+    height: 2rem;
 }
+button { margin: 10px 0; }
