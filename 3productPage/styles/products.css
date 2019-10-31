@@ -24,6 +24,7 @@ h2 { font-size: 1.5rem; }
 /* Get Started section */
 .start {
     text-align: center;
+    margin-bottom: 40px;
 }
 input {
     margin: 10px 0;
@@ -32,6 +33,9 @@ input[type="email"] {
     height: 1.2rem;
 }
 /* Features */
+.featurePiece {
+    margin-bottom: 30px;
+}
 .faLogo{
     display: inline-block;
     margin-top: 1rem;
@@ -43,8 +47,8 @@ input[type="email"] {
     display: inline-block;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
-    margin: 0 5px 10px 20px;
+    width: 80%;
+    margin: 0 5px 10px 5px;
 }
 .featurePiece h2 {
     box-sizing: border-box;
@@ -53,9 +57,14 @@ input[type="email"] {
 .featurePiece p {
     display: block;
 }
+@media only screen and (max-width: 625px) {
+    .faLogo { display: none;}
+    .featurePiece { width: 110%; margin:0; }
+}
 /* Video */
 .video {
     text-align: center; /*center video*/
+    margin: 50px 0;
 }
 /* Footer */
 /* Offers*/
