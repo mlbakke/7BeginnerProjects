@@ -20,7 +20,74 @@ li { list-style: none; } /*remove dots*/
 h1, h2, h3 { font-weight: 700; }
 h1 { font-size: 2rem; margin-bottom: 10px;}
 h2 { font-size: 1.5rem; }
+
 /* Header*/
+#headContainer { height: 75px; width: 100%; margin-bottom: 50px; }
+header { 
+    position: fixed; 
+    height: 75px; width: 100%;
+    background-color: var(--main-bg-color);
+}
+.logo img {
+    width: 300px;
+    margin: 20px 5px;
+    float: left;
+}
+
+/* Navigation*/
+/*ul for both header and footer*/
+nav { 
+    width: 275px;
+    float: right; 
+}
+.nav li {
+    display: inline;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--icon-color);
+}
+/*just the header nav*/
+.topNav li {
+    margin-right: 4%; 
+    line-height: 75px;
+}
+/* FOOTER */
+footer { 
+    margin-top: 30px; 
+    background-color: var(--main-bg-color);
+}
+.bottomNav li { 
+    display: inline; 
+    float: right; 
+    margin-right: 10px;
+}
+span { 
+    float: right; 
+    font-size: .75em;
+    margin: 4px 10px;
+    opacity: .75;
+}
+/* Media queries for footer, header & nav */
+@media only screen and (max-width: 605px) { 
+    .logo img {
+        width: 300px;
+        margin: 5px auto;
+        float: none;
+    }
+    nav { 
+        float: none;
+        text-align: center;
+    }
+    .nav li {
+        display: block;
+        line-height: 1em;
+    }
+    header { height: 110px; }
+}
 /* Get Started section */
 .start {
     text-align: center;
@@ -66,7 +133,6 @@ input[type="email"] {
     text-align: center; /*center video*/
     margin: 50px 0;
 }
-/* Footer */
 /* Offers*/
 .offers {
     display: grid;      /*3 columns */
@@ -94,6 +160,18 @@ input[type="email"] {
     font-weight: 600;
     font-size: 2rem;
     margin: 10px 0;
+}
+.offerFeatures li {
+    font-size: 1.2em;
+}
+@media only screen and (max-width: 740px) {
+    .offers {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .offerElement { border:none; }
 }
 /* Buttons*/
 button, #submit {
