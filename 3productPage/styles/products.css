@@ -17,24 +17,31 @@ body {
 }
 
 li { list-style: none; } /*remove dots*/
-h1, h2, h3 { font-weight: 700; }
-h1 { font-size: 2rem; margin-bottom: 10px;}
+h1, h2, h3 { font-weight: 700; } /*bold headings*/
+h1 { font-size: 2rem; margin-bottom: 2rem;}
 h2 { font-size: 1.5rem; }
 
-/* Header*/
-#headContainer { height: 75px; width: 100%; margin-bottom: 50px; }
+/* HEADER */
+
+/*headcontainer so the site content doesn't overlap 
+    with the fixed position header*/
+#headContainer { 
+    height: 4.75rem; width: 100%; 
+    margin-bottom: 4rem; /*leave some air between header and content*/
+}
+/*fixed header*/
 header { 
     position: fixed; 
-    height: 75px; width: 100%;
+    height: 4.75rem; width: 100%;
     background-color: var(--main-bg-color);
 }
+/* Original Trombones logo, fixed size, left side of header */
 .logo img {
     width: 300px;
     margin: 20px 5px;
     float: left;
 }
-
-/* Navigation*/
+/* NAVIGATION */
 /*ul for both header and footer*/
 nav { 
     width: 275px;
@@ -53,7 +60,27 @@ a:hover {
 /*just the header nav*/
 .topNav li {
     margin-right: 4%; 
-    line-height: 75px;
+    line-height: 4.75rem;
+}
+
+/*MEDIA QUERIES FOR HEADER AND NAVIGATION */
+/* Center logo and navigation on smaller screens*/
+@media only screen and (max-width: 605px) { 
+    /*adjust height of header+container to adjust for the change 
+        in navigation. A little less air between header and content
+        to avoid unneccessary scrolling on a smaller screen */
+    #headContainer { height: 8.5rem; margin-bottom: 2rem; }
+    header { 
+        text-align: center;
+        height: 8.5rem;
+    }
+    nav { width: 100%; }
+    .logo img, nav { float: none; }
+    .nav li {
+        display: block;
+        line-height: 1em;
+    }
+    header {  }
 }
 /* FOOTER */
 footer { 
@@ -71,24 +98,7 @@ span {
     margin: 4px 10px;
     opacity: .75;
 }
-/* Media queries for footer, header & nav */
-@media only screen and (max-width: 605px) { 
-    .logo img {
-        width: 300px;
-        margin: 5px auto;
-        float: none;
-    }
-    nav { 
-        float: none;
-        text-align: center;
-    }
-    .nav li {
-        display: block;
-        line-height: 1em;
-    }
-    header { height: 110px; }
-}
-/* Get Started section */
+/* GET STARTED SECTION */
 .start {
     text-align: center;
     margin-bottom: 40px;
@@ -99,7 +109,7 @@ input {
 input[type="email"] {
     height: 1.2rem;
 }
-/* Features */
+/* FEATURES */
 .featurePiece {
     margin-bottom: 30px;
 }
@@ -128,12 +138,12 @@ input[type="email"] {
     .faLogo { display: none;}
     .featurePiece { width: 110%; margin:0; }
 }
-/* Video */
+/* VIDEO */
 .video {
     text-align: center; /*center video*/
     margin: 50px 0;
 }
-/* Offers*/
+/* OFFERS */
 .offers {
     display: grid;      /*3 columns */
     grid-column-gap: 1%;
@@ -173,7 +183,7 @@ input[type="email"] {
     }
     .offerElement { border:none; }
 }
-/* Buttons*/
+/* BUTTONS */
 button, #submit {
     background-color: var(--button-color);
     border: none;
