@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/products.css">
     <script src="https://kit.fontawesome.com/d769e5e148.js" crossorigin="anonymous"></script>
+    <script>
+        function handleClick(){
+            alert("Sorry, this is just a mock up site!")
+        }
+    </script>
 </head>
 <body>
     
@@ -29,7 +34,7 @@
     <div class="container">
         <section class="start">
             <h1>Handcrafted, home-made masterpieces</h1>
-            <form action="" id="form">
+            <form action="javascript:handleClick()" id="form">
                 <!-- label for screen readers only-->
                 <label for="email" class="hidden">
                     Enter Your Email       
@@ -77,9 +82,10 @@
             </div>
         </section>
         <section class="video">
+            <h2 class="hidden">Video of trombones in action</h2>
                 <iframe width="450" height="300" 
                     src="https://www.youtube.com/embed/y8Yv4pnO7qc" 
-                    frameborder="0" allow="accelerometer; autoplay; 
+                    allow="accelerometer; autoplay; 
                     encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
         </section>
