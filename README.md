@@ -15,7 +15,7 @@ smaller when scrolled down on the page.
 <h2>Third project: Product Landing Page</h2>
 A Product page consisting of several different sections. Responsive layout, 
 a header, footer, navigation, simple email form, features section, video section,
-and a section for three different offers. 
+and a section with three different offers. 
 Consists solely of HTML and CSS.
 
 <h2>More to come</h2>
