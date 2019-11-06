@@ -1,11 +1,14 @@
 /* Variables */
+
 :root{
     --main-bg-color: rgb(240, 240, 240);
     --dark-bg-color: rgb(200, 200, 200);
     --button-color: rgb(255, 196, 0);
     --icon-color: rgb(240, 128, 0);
 }
+
 /* Site-wide */
+
 body {
     background-color: var(--main-bg-color);
     font-size: 1.2rem;
@@ -37,11 +40,13 @@ header {
 }
 /* Original Trombones logo, fixed size, left side of header */
 .logo img {
-    width: 300px;
-    margin: 20px 5px;
+    width: 18rem;
+    margin: 1.25rem .3rem;
     float: left;
 }
+
 /* NAVIGATION */
+
 /*ul for both header and footer*/
 nav { 
     width: 47%;
@@ -65,6 +70,7 @@ a:hover {
 }
 
 /*MEDIA QUERIES FOR HEADER AND NAVIGATION */
+
 /* Center logo and navigation on smaller screens*/
 @media only screen and (max-width: 605px) { 
     /*adjust height of header+container to adjust for the change 
@@ -82,7 +88,9 @@ a:hover {
         line-height: 1em;
     }
 }
+
 /* FOOTER */
+
 footer { 
     margin-top: 2rem; 
     background-color: var(--main-bg-color);
@@ -98,7 +106,9 @@ span {
     margin: .5em .7em;
     opacity: .75;
 }
+
 /* GET STARTED SECTION */
+
 .start {
     text-align: center;
     margin-bottom: 2.5rem;
@@ -109,7 +119,9 @@ input {
 input[type="email"] {
     height: 1.2rem;
 }
+
 /* FEATURES */
+
 .featurePiece {
     margin-bottom: 2rem;
 }
@@ -118,14 +130,14 @@ input[type="email"] {
     margin-top: 1rem;
     color: var(--icon-color);
     width: 10%;
-    margin: 0 5px 20px 5px;
+    margin: 0 .7rem;
 }
 .featureText{
     display: inline-block;
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    margin: 0 5px 10px 5px;
+    margin: 0 .5rem .6rem;
 }
 .featurePiece h2 {
     box-sizing: border-box;
@@ -138,12 +150,16 @@ input[type="email"] {
     .faLogo { display: none;}
     .featurePiece { width: 110%; margin:0; }
 }
+
 /* VIDEO */
+
 .video {
     text-align: center; /*center video*/
-    margin: 50px 0;
+    margin: 3.5rem 0;
 }
+
 /* OFFERS */
+
 .offers {
     display: grid;      /*3 columns */
     grid-column-gap: 1%;
@@ -155,7 +171,7 @@ input[type="email"] {
     /*adjusts heading for each element(/trombone)*/
 .offerHead {
     background-color: var(--dark-bg-color);
-    padding: 5px;
+    padding: .3rem;
 }
 .offerHead h2 {
     font-size: 1.75rem;
@@ -169,7 +185,7 @@ input[type="email"] {
 .price {
     font-weight: 600;
     font-size: 2rem;
-    margin: 10px 0;
+    margin: .6rem 0;
 }
 .offerFeatures li {
     font-size: 1.2em;
@@ -178,21 +194,22 @@ input[type="email"] {
     .offers {
         display: block;
         width: 100%;
-        max-width: 500px;
+        max-width: 30rem;
         margin: 0 auto;
     }
     .offerElement { border:none; }
 }
+
 /* BUTTONS */
+
 button, #submit {
     background-color: var(--button-color);
     border: none;
     font-size: 1.2rem;
-    width: 125px;
+    width: 8rem;
     height: 2rem;
 }
-button { margin: 10px 0; }
-
+button { margin: .6rem 0; }
 .hidden {
     position: absolute;
     left: -10000px;
